@@ -1,0 +1,23 @@
+{
+  "name": "dixby-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aausek/dixby-node-app.git"
+  },
+  "author": "Ana Ausek",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/aausek/dixby-node-app/issues"
+  },
+  "homepage": "https://github.com/aausek/dixby-node-app#readme",
+  "dependencies": {
+    "request": "^2.81.0",
+    "twitter": "^1.7.0"
+  }
+}
