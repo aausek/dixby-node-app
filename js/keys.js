@@ -11,5 +11,6 @@ exports.twitterKeys = {
 exports.spotifyKeys = {
 	client_id: "74493d252e844f0dacb6636dede2c31f",
 	client_secret: "d2775b6c2f604035848eb6f405b016ca",
+	redirect_uri : "http://google.com"
 }
 
