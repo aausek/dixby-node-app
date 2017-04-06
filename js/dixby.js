@@ -121,14 +121,14 @@ function justDoIt(){
 
 };
 
-//Logging the data from terminal to external "log.txt" file
-var logIt = function (data){
-	fs.appendFile("log.txt", data, "utf8", function(error){
-			if (error) {
-				console.log(error);
-			};
-	});
-};
+// Logging the data from terminal to external "log.txt" file
+// var logIt = function (data){
+// 	fs.appendFile("log.txt", data, "utf8", function(error){
+// 			if (error) {
+// 				console.log(error);
+// 			};
+// 	});
+// };
 
 //Listening to user command and case
 dixby(command, process.argv[3]);
