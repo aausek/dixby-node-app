@@ -51,6 +51,7 @@ function twitter(){
 	    	
 	    }
 	  }
+	  //logIt(data);
 	  
 
 	});
@@ -73,7 +74,7 @@ function spotify(song){
 	    else{
 	    	console.log("Error!");
 	    }
-	    
+	    //logIt(data);
 	});
 };
 
@@ -102,6 +103,7 @@ function omdb(movie){
 		else{
 			console.log("Error!");
 		}
+	    //logIt(data);
 		
 	});
 }
@@ -110,30 +112,24 @@ function omdb(movie){
 function justDoIt(){
 	fs.readFile("random.txt", "utf8", function(error, data){
 		spotify(data);
+		logIt(data);
 		if(error){
 			throw error;
 		}
 	});
+	    //logIt(data);
+
 };
 
 //Logging the data from terminal to external "log.txt" file
-function logIt(data){
+var logIt = function (data){
 	fs.appendFile("log.txt", data, "utf8", function(error){
 			if (error) {
 				console.log(error);
-			}
-			// else{
-			// 	console.log(data);
-			// }	
+			};
 	});
 };
 
-
 //Listening to user command and case
 dixby(command, process.argv[3]);
-logIt();
-
-
-
-
 
